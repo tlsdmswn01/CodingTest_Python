@@ -1,8 +1,8 @@
 def solution(arr):
     answer = []
     a=min(arr)
-    arr.remove(a)
-    if not arr:
-        return [-1]
-    else:
+    if len(arr)>1:
+        arr.remove(a)
         return arr
+    else:
+        return [-1]
