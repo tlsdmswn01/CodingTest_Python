@@ -1,7 +1,5 @@
 import numpy as np
 def solution(a, b):
-    answer=0
-    for i in range(len(a)):
-        answer+=a[i]*b[i]
-    
-    return answer
+    a=np.array(a)
+    b=np.array(b)
+    return int(sum(a*b))
