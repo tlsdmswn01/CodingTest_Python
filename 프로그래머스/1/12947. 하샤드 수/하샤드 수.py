@@ -1,6 +1,13 @@
 def solution(x):
+    answer=True
     a=sum(list(map(int,str(x))))
     if x%a==0:
-        return True
+        answer=True
     else:
-        return False
+        answer=False
+
+
+
+
+# ==============================
+    return answer
