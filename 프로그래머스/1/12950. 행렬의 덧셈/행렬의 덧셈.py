@@ -1,9 +1,7 @@
 def solution(arr1, arr2):
     answer = []
-    a=[]
-    for i in range(len(arr1)):
-        for k in range(len(arr1[0])):
-            a.append(arr1[i][k]+arr2[i][k])
-        answer.append(a)
-        a=[]
+    for i,j in enumerate(arr1):
+        answer.append([])
+        for k in range(len(j)):
+            answer[i].append(arr1[i][k]+arr2[i][k])
     return answer
