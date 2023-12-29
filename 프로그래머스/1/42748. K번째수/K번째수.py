@@ -1,8 +1,8 @@
 def solution(array, commands):
     answer = []
-    for i in commands:
-        a,b,c=i[0],i[1],i[2]
-        g=array[a-1:b]
-        g.sort()
-        answer.append(g[c-1])
+    for o in commands:
+        i,j,k=o[0],o[1],o[2]
+        a=array[i-1:j]
+        a.sort()
+        answer.append(a[k-1])
     return answer
