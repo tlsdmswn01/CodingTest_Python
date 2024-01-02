@@ -1,11 +1,12 @@
+
 def solution(arr):
-    answer = []
-    a=0
-    for i in arr:
-        if not answer:
-            answer.append(i)
+# 답안 작성 부분 ===============
+    answer=[arr[0]]
+    for i in range(1,len(arr)):
+        if answer[-1]!=arr[i]:
+            answer.append(arr[i])
+        else:
+            pass
             
-        if answer[a]!=i:
-            answer.append(i)
-            a+=1
+# ==============================
     return answer
