@@ -7,7 +7,6 @@ def solution(k, m, score):
             a=score.pop()
             b.append(a)
         c.append(b)
-    
     answer=0
     for k in c:
         answer+=min(k)*m
