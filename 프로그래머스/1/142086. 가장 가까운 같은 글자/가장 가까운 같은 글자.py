@@ -1,16 +1,16 @@
 def solution(s):
-    answer = []
-    result=[]
+    a=[]
+    answer=[]
     for i in s:
-        answer.append(i)
-        if answer.count(i)==1:
-            result.append(-1)
+        c=0
+        a.append(i)
+        if a.count(i)==1:
+            answer.append(-1)
+            continue
         else:
-            a=0
-            for k in range(len(answer)-1,0,-1):
-                a+=1
-                if answer[len(answer)-1]==answer[len(answer)-1-a]:
+            for k in range(len(a)-1,0,-1):
+                c+=1
+                if a[len(a)-1]==a[len(a)-1-c]:
                     break
-            result.append(a)
-            
-    return result
+            answer.append(c)
+    return answer
