@@ -1,5 +1,5 @@
 def solution(s):
-    answer=[]
+    answer = []
     for i in s.split(' '):
         i=list(i)
         for k in range(len(i)):
