@@ -1,3 +1,6 @@
 def solution(s):
-    a=list(map(int,s.split()))
-    return str(min(a))+' '+str(max(a))
+    answer = ''
+    a=list(map(int,s.split(' ')))
+    a.sort()
+    c,d=str(a[0]),str(a[-1])
+    return c+' '+d
