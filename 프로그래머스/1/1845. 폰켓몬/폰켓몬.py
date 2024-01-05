@@ -1,8 +1,5 @@
 def solution(nums):
-    answer = 0
-    a=len(set(nums))
-    if len(nums)/2 > a:
-        return a
+    if (len(nums)//2) > len(set(nums)):
+        return int(len(set(nums)))
     else:
-        return len(nums)/2
-    return answer
+        return int(len(nums)/2)
