@@ -5,4 +5,5 @@ def solution(brown, yellow):
             row=int(yellow/i)
             col=i
         if 2*(row+col)+4==brown:
-            return[row+2,col+2]
+            return [row+2,col+2]
+    
