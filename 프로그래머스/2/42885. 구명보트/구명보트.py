@@ -1,14 +1,14 @@
 def solution(people, limit):
     answer = 0
     people.sort()
-    light,heavy = 0, len(people)-1
-    
-    while light<=heavy:
-        
-        if people[light]+people[heavy]<=limit:
-            light+=1
-            
-        heavy-=1
+    front=0
+    end=len(people)-1
+    while front<=end:
+        if people[front]+people[end] <=limit:
+            front+=1
+            end-=1
+        else:
+            end-=1
         answer+=1
-        
+    
     return answer
